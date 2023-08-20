@@ -1,0 +1,17 @@
+body {
+    position: relative;
+}
+
+#DSSW {
+    color: black;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+}
+
+#contact {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+}
