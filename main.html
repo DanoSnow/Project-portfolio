@@ -9,7 +9,192 @@
         <link rel="stylesheet" href="styles/jquery-ui.css">
         <link rel="stylesheet" href="styles/bootstrap.min.css">
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#">
+        <!--Navigation bar and ScrollSpy-->
+        <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+            <div class="navbar-brand">Dano Snow SW</div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Summary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                -->
+            </ul>
+        </nav>
+
+        <!--Summary section-->
+        <div class="jumbotron jumbotron-fluid" id="summary">
+            <div class="container">
+                <h1 class="display-4">Daniel Izaguirre</h1>
+                <p class="text-muted">Aka Dano Snow</p>
+                <p class="lead">Frontend developer. Backend developer. Data Analist. 
+                    Data scientist. Machine learning engineer.</p>
+                <hr class="my-4">
+                <p>Developer with experience in Frontend and Backend developing, 
+                    as well as in Data Analysis and Data Science. Outsanding skills 
+                    in the main programming languages Python, Javascript and C++, and 
+                    solid knowledge in relational dabatase management. Passionate about 
+                    finding innovative and efficient solutions to technological challenges.
+                    Oriented towards the development of quality software highly adaptable 
+                    and with effective problem solving skills. Commited to learning new 
+                    technologies and staying abreast of the latest trends in the industry.
+                </p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">See more...</a>
+                </p>
+            </div>
+        </div>
+
+        <!--Phrase-->
+        <div class="container-fluid" style="padding: 10px; background-color: black; color: white;">
+            <div class="container">
+                <h1 class="display-4"><i>"If you can imagine it you can program it"</i></h1>
+                <p class="text-muted">Alejandro Taboada. Rest in peace</p>
+            </div>
+        </div>
+
+        <!--Projects carousel-->
+        <div class="container" id="projects">
+            <div class="row">
+                <div class="col-sm-4">
+                    <!--Machine Leargine Engineering carousel-->
+                    <div id="machine-learning-carousel" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img class="card-img-top custom-card-img" src="resources/diamonds.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Machine Learning Engineering</h5>
+                                        <hr class="my-sm-1">
+                                        <p class="card-text">Diamonds price prediction.</p>
+                                        <a href="#" class="btn btn-primary">Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img class="card-img-top custom-card-img" src="resources/customers.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Machine Learning Engineering</h5>
+                                        <hr class="my-sm-1">
+                                        <p class="card-text">Customer segmentation.</p>
+                                        <a href="#" class="btn btn-primary">Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#machine-learning-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#machine-learning-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <!--Backend developing carousel-->
+                    <div id="backend-carousel" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img class="card-img-top custom-card-img" src="resources/backend-python-fastapi.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Backend</h5>
+                                        <hr class="my-sm-1">
+                                        <p class="card-text">Tech exam - InstaShare.</p>
+                                        <a href="#" class="btn btn-primary">Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img class="card-img-top custom-card-img" src="resources/backend-python.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Backend</h5>
+                                        <hr class="my-sm-1">
+                                        <p class="card-text">Tech exam 2 - New social media.</p>
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#projects-modal">Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#backend-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#backend-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <!--Frontend developing carousel-->
+                    <div id="frontend-carousel" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img class="card-img-top custom-card-img" src="resources/frontend.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Frontend</h5>
+                                        <hr class="my-sm-1">
+                                        <p class="card-text">Shopping web.</p>
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#projects-modal">Project</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img class="card-img-top custom-card-img" src="resources/frontend-portfolio.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Frontend</h5>
+                                        <hr class="my-sm-1">
+                                        <p class="card-text">My own portfolio.</p>
+                                        <a href="#" class="btn btn-primary">Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#frontend-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#frontend-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Modal for the projects that are not developed-->
+        <div class="modal fade" id="projects-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel">Sorry</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>This project is not real.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!--Scripts-->
         <script type="text/javascript" src="scripts/jquery.min.js"></script>
