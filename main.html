@@ -9,13 +9,13 @@
         <link rel="stylesheet" href="styles/jquery-ui.css">
         <link rel="stylesheet" href="styles/bootstrap.min.css">
     </head>
-    <body data-spy="scroll" data-target="#">
+    <body data-spy="scroll" data-target="#navigation-bar">
         <!--Navigation bar and ScrollSpy-->
-        <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark" id="navigation-bar">
             <div class="navbar-brand">Dano Snow SW</div>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Summary</a>
+                    <a class="nav-link" href="#summary">Summary</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
@@ -29,6 +29,7 @@
                 </li>
                 -->
             </ul>
+            <div id="navigation-dropdown" style="display: none;"></div>
         </nav>
 
         <!--Summary section-->
