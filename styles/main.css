@@ -10,11 +10,24 @@ body {
     padding: 10px;
 }
 
-#projects {
-    width: 100%;
-    border: 1px solid;
+.section {
     border-radius: 5px;
-    padding: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: rgba(87, 119, 128, 0.10);
+}
+
+#contact a {
+    color: white;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
 }

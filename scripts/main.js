@@ -12,7 +12,8 @@ function scrollDocument(container){
     });
 }
 //Scroll the document to the position target by the <a> href navbar items
-$(document).ready(scrollDocument(".navbar-nav"));
+scrollDocument("#summary");
+scrollDocument(".navbar-nav");
 
 /*Methos to turn the navigation bar items into a Dropdown item that
 contains the navigation bar items when the window is resized*/
@@ -41,3 +42,15 @@ $(window).on('resize', function(){
     }
 });
 
+//Enable the accordion menu with bg-dark style in active header
+$("#skills-container").accordion({
+    create: function(event, ui){
+        $(ui.header).addClass("bg-dark");
+    },
+    beforeActivate: function(event, ui){
+        $(".ui-accordion-header").removeClass("bg-dark");
+        $(ui.newHeader).addClass("bg-dark");
+    }
+});
+//Enable tooltips
+$('[data-toggle="tooltip"]').tooltip();

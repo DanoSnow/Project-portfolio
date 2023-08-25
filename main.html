@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="styles/jquery-ui.css">
         <link rel="stylesheet" href="styles/bootstrap.min.css">
     </head>
-    <body data-spy="scroll" data-target="#navigation-bar">
-        <!--Navigation bar and ScrollSpy-->
+    <body>
+        <!--Navigation bar-->
         <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark" id="navigation-bar">
             <div class="navbar-brand">Dano Snow SW</div>
             <ul class="navbar-nav mr-auto">
@@ -18,25 +18,23 @@
                     <a class="nav-link" href="#summary">Summary</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
-                <!--
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-                -->
             </ul>
             <div id="navigation-dropdown" style="display: none;"></div>
         </nav>
 
         <!--Summary section-->
-        <div class="jumbotron jumbotron-fluid" id="summary">
+        <div class="jumbotron jumbotron-fluid" id="summary" style="background-color: rgba(87, 119, 128, 0.10);">
             <div class="container">
-                <h1 class="display-4">Daniel Izaguirre</h1>
-                <p class="text-muted">Aka Dano Snow</p>
+                <h1 class="display-4">Daniel Izaguirre Pereira</h1>
+                <p class="text-muted">Aka Dano Snow SW</p>
                 <p class="lead">Frontend developer. Backend developer. Data Analist. 
                     Data scientist. Machine learning engineer.</p>
                 <hr class="my-4">
@@ -50,150 +48,208 @@
                     technologies and staying abreast of the latest trends in the industry.
                 </p>
                 <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">See more...</a>
+                    <a class="btn btn-primary btn-lg" href="#skills" role="button">See more...</a>
                 </p>
             </div>
         </div>
 
         <!--Phrase-->
-        <div class="container-fluid" style="padding: 10px; background-color: black; color: white;">
+        <div class="container-fluid bg-dark" style="padding: 10px; color: white; margin-top: 50px; margin-bottom: 50px;">
             <div class="container">
                 <h1 class="display-4"><i>"If you can imagine it you can program it"</i></h1>
                 <p class="text-muted">Alejandro Taboada. Rest in peace</p>
             </div>
         </div>
 
-        <!--Projects carousel-->
-        <div class="container" id="projects">
-            <div class="row">
-                <div class="col-sm-4">
-                    <!--Machine Leargine Engineering carousel-->
-                    <div id="machine-learning-carousel" class="carousel slide w-100" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card">
-                                    <img class="card-img-top custom-card-img" src="resources/diamonds.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Machine Learning Engineering</h5>
-                                        <hr class="my-sm-1">
-                                        <p class="card-text">Diamonds price prediction.</p>
-                                        <a href="#" class="btn btn-primary">Project</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <img class="card-img-top custom-card-img" src="resources/customers.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Machine Learning Engineering</h5>
-                                        <hr class="my-sm-1">
-                                        <p class="card-text">Customer segmentation.</p>
-                                        <a href="#" class="btn btn-primary">Project</a>
-                                    </div>
-                                </div>
-                            </div>
+        <!--Skills section-->
+        <div class="container section" id="skills" style="margin-bottom: 0;">
+            <div class="container-fluid">
+                <div class="container">
+                    <h1 class="display-4">Skills</h1>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div id="skills-container">
+                <h3 class="accordion-section-header">Backend</h3>
+                <div>
+                    <div class="row text-center">
+                        <div class="col-sm-3">
+                            <img src="resources/fastapi-icon.jpg" class="icons" data-toggle="tooltip" title="Python - FastAPI">
                         </div>
-                        <a class="carousel-control-prev" href="#machine-learning-carousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#machine-learning-carousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        <div class="col-sm-3">
+                            <img src="resources/sqlalchemy-icon.jpg" class="icons" data-toggle="tooltip" title="Python - SQLAlchemy">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <!--Backend developing carousel-->
-                    <div id="backend-carousel" class="carousel slide w-100" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card">
-                                    <img class="card-img-top custom-card-img" src="resources/backend-python-fastapi.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Backend</h5>
-                                        <hr class="my-sm-1">
-                                        <p class="card-text">Tech exam - InstaShare.</p>
-                                        <a href="#" class="btn btn-primary">Project</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <img class="card-img-top custom-card-img" src="resources/backend-python.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Backend</h5>
-                                        <hr class="my-sm-1">
-                                        <p class="card-text">Tech exam 2 - New social media.</p>
-                                        <button class="btn btn-primary" data-toggle="modal" data-target="#projects-modal">Project</button>
-                                    </div>
-                                </div>
-                            </div>
+                <h3 class="accordion-section-header">Frontend</h3>
+                <div>
+                    <div class="row text-center">
+                        <div class="col-sm-3">
+                            <img src="resources/html-icon.jpg" class="icons" data-toggle="tooltip" title="HTML 5">
                         </div>
-                        <a class="carousel-control-prev" href="#backend-carousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#backend-carousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        <div class="col-sm-3">
+                            <img src="resources/css-icon.jpg" class="icons" data-toggle="tooltip" title="CSS 3">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="resources/js-icon.jpg" class="icons" data-toggle="tooltip" title="Javascript">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="resources/jquery-icon.jpg" class="icons" data-toggle="tooltip" title="jQuery">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="resources/jqueryui-icon.jpg" class="icons" data-toggle="tooltip" title="jQuery UI">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="resources/bootstrap-icon.jpg" class="icons" data-toggle="tooltip" title="Bootstrap 4">
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
-                    <!--Frontend developing carousel-->
-                    <div id="frontend-carousel" class="carousel slide w-100" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="card">
-                                    <img class="card-img-top custom-card-img" src="resources/frontend.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Frontend</h5>
-                                        <hr class="my-sm-1">
-                                        <p class="card-text">Shopping web.</p>
-                                        <button class="btn btn-primary" data-toggle="modal" data-target="#projects-modal">Project</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="card">
-                                    <img class="card-img-top custom-card-img" src="resources/frontend-portfolio.jpg" alt="Card image cap">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Frontend</h5>
-                                        <hr class="my-sm-1">
-                                        <p class="card-text">My own portfolio.</p>
-                                        <a href="#" class="btn btn-primary">Project</a>
-                                    </div>
-                                </div>
-                            </div>
+                <h3 class="accordion-section-header">Data Analysis | Data Science | Machine Learning Engineering</h3>
+                <div>
+                    <div class="row text-center">
+                        <div class="col-sm-3">
+                            <img src="resources/numpy-icon.jpg" class="icons" data-toggle="tooltip" title="Python - Numpy">
                         </div>
-                        <a class="carousel-control-prev" href="#frontend-carousel" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#frontend-carousel" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+                        <div class="col-sm-3">
+                            <img src="resources/pandas-icon.jpg" class="icons" data-toggle="tooltip" title="Python - Pandas">
+                        </div>
+                        <div class="col-sm-3">
+                            <!--Corregir icono-->
+                            <img src="resources/matplotlib-icon.jpg" class="icons" data-toggle="tooltip" title="Python - Matplotlib">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="resources/seaborn-icon.jpg" class="icons" data-toggle="tooltip" title="Python - Seaborn">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="resources/plotly-icon.jpg" class="icons" data-toggle="tooltip" title="Python - Plotly">
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="resources/scikit-learn-icon.jpg" class="icons" data-toggle="tooltip" title="Python - Scikit-learn">
+                        </div>
+                    </div>
+                </div>
+                <h3 class="accordion-section-header">Desktop</h3>
+                <div>
+                    <div class="row text-center">
+                        <div class="col-sm-3">
+                            <img src="resources/qt-icon.jpg" class="icons" data-toggle="tooltip" title="C++ - Qt Creator">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!--Modal for the projects that are not developed-->
-        <div class="modal fade" id="projects-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalLabel">Sorry</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+
+        <!--Projects section-->
+        <div class="container section" id="projects" style="margin-top: 0;">
+            <div class="container-fluid">
+                <div class="container">
+                    <h1 class="display-4">Projects</h1>
+                </div>
+            </div>
+            <hr class="my-4">
+            <!--Projects carousel-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <!--Machine Leargine Engineering carousel-->
+                        <div id="machine-learning-carousel" class="carousel slide w-100" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card">
+                                        <img class="card-img-top custom-card-img" src="resources/diamonds.jpg" alt="Card image cap">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Machine Learning Engineering</h5>
+                                            <hr class="my-sm-1">
+                                            <p class="card-text">Diamonds price prediction.</p>
+                                            <a href="https://github.com/DanoSnow/Data-Analysis" target="_blank" class="btn btn-primary">Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="card">
+                                        <img class="card-img-top custom-card-img" src="resources/customers.jpg" alt="Card image cap">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Machine Learning Engineering</h5>
+                                            <hr class="my-sm-1">
+                                            <p class="card-text">Customer segmentation.</p>
+                                            <a href="https://github.com/DanoSnow/NataSquad-AI-Hackathon" target="_blank" class="btn btn-primary">Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#machine-learning-carousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#machine-learning-carousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <p>This project is not real.</p>
+                    <div class="col-sm-4">
+                        <!--Backend developing carousel-->
+                        <div id="backend-carousel" class="carousel slide w-100" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card">
+                                        <img class="card-img-top custom-card-img" src="resources/backend-python-fastapi.jpg" alt="Card image cap">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Backend</h5>
+                                            <hr class="my-sm-1">
+                                            <p class="card-text">Tech exam - InstaShare.</p>
+                                            <a href="https://github.com/DanoSnow/Tech-Exam-InstaShare" target="_blank" class="btn btn-primary">Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#backend-carousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#backend-carousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <!--Frontend developing carousel-->
+                        <div id="frontend-carousel" class="carousel slide w-100" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card">
+                                        <img class="card-img-top custom-card-img" src="resources/frontend-portfolio.jpg" alt="Card image cap">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Frontend</h5>
+                                            <hr class="my-sm-1">
+                                            <p class="card-text">My own portfolio.</p>
+                                            <a href="https://github.com/DanoSnow/Project-portfolio" target="_blank" class="btn btn-primary">Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#frontend-carousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#frontend-carousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="jumbotron jumbotron-fluid bg-dark" id="contact" style="margin-bottom: 0;">
+            <div class="container" style="text-align: center;">
+                <a href="https://linkedin.com/in/daniel-izaguirre-a73b3a162" target="_blank">LinkedIn</a>
+                <a href="https://t.me/DanoSnow_sw" target="_blank">Telegram</a>
+                <p class="text-muted" style="margin-top: 50px; margin-bottom: 10px;">Developed by Dano Snow SW</p>
+                <a href="https://github.com/DanoSnow" target="_blank">Link to GitHub</a>
             </div>
         </div>
 
